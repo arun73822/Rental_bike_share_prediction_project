@@ -1,0 +1,10 @@
+Flask
+gunicorn
+Flask-Cors
+pandas
+numpy
+PyYAML
+zip-files
+six
+sklearn
+-e .

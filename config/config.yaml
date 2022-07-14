@@ -1,0 +1,38 @@
+Training_Pipeline_Config:
+  pipeline_name: rental_bike_share
+  artifact_dir: artifact
+
+Data_Ingestion_Config:
+  dataset_download_url: https://archive.ics.uci.edu/ml/machine-learning-databases/00275/Bike-Sharing-Dataset.zip
+  raw_data_dir: raw_data
+  zip_data_dir: zip_data
+  ingested_data_dir: ingested_data
+  ingested_test_dir: test
+  ingested_train_dir: train
+
+Data_Validation_Config:
+  schema_file_dir: config
+  schema_file_name: schema.yaml
+  report_file_name: report.json
+  report_page_name: report.html
+
+Data_Transformation_Config:
+  tranformed_dir: transformed_data
+  transformed_train_dir: train
+  transformed_test_dir: test
+  pre_processed_object_dir: preprocessed
+  pre_processed_object_file: pre_processed_object.pkl
+
+Model_Training_Config:
+  trained_model_dir: model_trainer
+  model_file_name: model.pkl
+  base_accuracy: 0.6
+  model_config_dir: config
+  model_config_file_name: model.yaml
+
+Model_Evaluation_Config:
+  model_evaluation_file_name: model_evaluation.yaml
+
+Model_Pusher_Config:
+  model_export_dir: saved_models
+
