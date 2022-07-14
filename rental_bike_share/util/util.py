@@ -1,5 +1,6 @@
 from rental_bike_share.exception import Rental_bike_share_Exception
 import yaml
+import json
 import sys,os
 
 def read_yaml_file(file_path:str)->dict:
@@ -14,6 +15,7 @@ def read_yaml_file(file_path:str)->dict:
     except Exception as e:
         raise Rental_bike_share_Exception(e,sys) from e
 
+
 def write_yaml_file(file_path:str,data:None):
 
     """description: Creates the yaml file
@@ -24,5 +26,13 @@ def write_yaml_file(file_path:str,data:None):
         with open(file_path,'w') as yaml_file:
             if data is None:
                 yaml.dump(data,yaml_file)
+    except Exception as e:
+        raise Rental_bike_share_Exception(e,sys) from e
+
+
+def load_json_data(file_path:str,data:dict):
+    try:
+        with open(file_path,'w') as report_file:
+            json.dump(data,report_file,indent=5)
     except Exception as e:
         raise Rental_bike_share_Exception(e,sys) from e

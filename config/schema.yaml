@@ -1,0 +1,40 @@
+columns:
+  instant     : int64
+  dteday      : object
+  season      : int64
+  yr          : int64
+  mnth        : int64
+  hr          : int64
+  holiday     : int64
+  weekday     : int64
+  workingday  : int64
+  weathersit  : int64
+  temp        : float64
+  atemp       : float64
+  hum         : float64
+  windspeed   : float64
+  casual      : int64
+  registered  : int64
+  cnt         : int64
+
+
+numerical_columns:
+  - instant
+  - dteday
+  - season
+  - yr
+  - mnth
+  - hr
+  - holiday
+  - weekday
+  - workingday
+  - weathersit
+  - temp
+  - atemp
+  - hum
+  - windspeed
+  - casual
+  - registered
+  - cnt
+
+target_column : cnt

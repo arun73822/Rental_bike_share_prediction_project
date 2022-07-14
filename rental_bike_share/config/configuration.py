@@ -55,7 +55,7 @@ class Configuration:
                                                         ingested_test_data_dir=ingested_test_data_dir)
 
             logging.info(f"data_ingestion_config : {data_ingestion_config}")
-            #logging.info(f"{'>>'*8}data ingestion config successfully completed{'>>'*8}\n\n")
+            logging.info(f"{'>>'*8}data ingestion config successfully completed{'>>'*8}\n\n")
 
             return data_ingestion_config
         except Exception as e:
@@ -72,7 +72,7 @@ class Configuration:
                                                   DATA_VALIDATION_ARTIFACT_DIR,
                                                   self.timestamp)
             
-            schema_file_path=os.path.join(data_validation_artifact,
+            schema_file_path=os.path.join(ROOT_DIR,
                                           data_validation_config_info[DATA_VALIDATION_SCHEMA_DIR],
                                           data_validation_config_info[DATA_VALIDATION_SCHEMA_FILE_NAME])
             

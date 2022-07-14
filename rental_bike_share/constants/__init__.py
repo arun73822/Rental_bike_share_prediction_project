@@ -69,3 +69,7 @@ MODEL_EVALUATION_MODEL_EVALUATION_FILE_NAME='model_evaluation_file_name'
 MODEL_PUSHER_CONFIG_KEY='Model_Pusher_Config'
 MODEL_PUSHER_ARTIFACT_DIR='model_pusher'
 MODEL_PUSHER_EXPORT_DIR='model_export_dir'
+
+# schema file related variables
+NUMERICAL_COLUMNS='numerical_columns'
+TARGET_COLUMN= 'target_column'

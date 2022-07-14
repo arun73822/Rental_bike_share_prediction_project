@@ -7,4 +7,5 @@ PyYAML
 zip-files
 six
 sklearn
+evidently
 -e .
